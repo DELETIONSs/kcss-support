@@ -1,0 +1,33 @@
+{
+  "name": "kcss-support",
+  "displayName": "KCSS Syntax Highlighter",
+  "description": "Syntax highlighting for the KCSS preprocessor language.",
+  "version": "0.0.1",
+  "publisher": "resistance",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DELETIONSs/kcss-support"
+  },
+  "license": "MIT",
+  "contributes": {
+    "languages": [
+      {
+        "id": "kcss",
+        "extensions": [".kcss"],
+        "aliases": ["KCSS"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kcss",
+        "scopeName": "source.kcss",
+        "path": "./syntaxes/kcss.tmLanguage.json"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  }
+}
